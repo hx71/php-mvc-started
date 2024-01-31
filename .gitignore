@@ -1,0 +1,11 @@
+*.iml
+.idea/
+.vscode/
+.DS_Store
+.env
+*.log
+vendor
+
+# CICD Github
+*.env
+/vendor
