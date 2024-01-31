@@ -1,0 +1,39 @@
+# PHP MVC
+Web Application - Create Application MVC with PHP
+
+Setup Instalastion:
+<pre>
+- Impor database
+- open file: app/config/config.php
+- setup configuratin :
+	define('BASEURL', 'http://localhost/php-mvc-started/public');
+
+	// Database
+	define('DB_HOST', 'localhost');
+	define('DB_USERNAME', 'root');
+	define('DB_PASSWORD', '');
+	define('DB_NAME', 'php_mvc_started');
+
+- Create migration database
+	- run command "composer require robmorgan/phinx --dev"
+	- create directory folder
+		- db
+			- migrations
+			- seeds
+	- run command "php vendor/bin/phinx init"
+	- run command "vendor/bin/phinx test"
+
+- create file migration
+	- run command "vendor/bin/phinx create User"
+
+- running migration 
+	- phinx migrate -e development
+
+- Create seeder
+	- run command "vendor/bin/phinx seed:create Users"
+
+	- run command "vendor/bin/phinx seed:run"
+</pre>
+
+
+
